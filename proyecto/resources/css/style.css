@@ -1,0 +1,148 @@
+body{
+margin:0;
+padding:0;
+font-family: montserrat;
+background: linear-gradient(150deg, #6C3483, #58D68D);
+height: 100vh;
+
+}
+.formulario{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 400px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 #0007;
+}
+.formulari{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 700px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 0 #0007;
+}
+.formulari h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom:1px solid silver;
+}
+.formulari .registro{
+    padding:1rem;
+    text-align: justify;
+
+}
+.formulari .registro {
+    padding: 1.5rem; 
+    border-color: #adadad;
+    border-radius: 2rem;
+
+}
+.formulari label{
+    width:100%;
+    padding: 1.5rem;
+    margin:1.5rem;
+    height: 40px;
+}
+.formulari input{
+    margin-bottom:1rem;
+}
+
+.formulario h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom:1px solid silver;
+}
+.formulario form{
+    padding: 0 40px; 
+    box-sizing: border-box;
+}
+form .username{
+    position: relative;
+    border-bottom:2px solid #adadad; 
+    margin: 30px 0;
+
+}
+.username input{
+    width:100%;
+    padding: 0 15px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none; /*no se ve el cursor cuando seleccionas el cuadro*/
+}
+.username label{
+    position:absolute;
+    top:50%;
+    left:15px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size:16px;
+    pointer-events: none;
+}
+.username span::before{
+    content:'';
+    position: absolute;
+    top: 40px;
+    left:0;
+    width: 100%;
+    height: 2px;
+    background: #6C3483;
+    transition: .5s;
+}
+.username input:focus ~ label,
+.username input:valid ~ label{
+    top:-5px;
+    color: #6C3483;
+    transition: top 0.3s ease, color 0.3s ease;
+}
+.username input:focus ~ span::before,
+.username input:focus ~ span::before{
+    width:100%;
+}
+.recordar{
+    margin: -5px 0 20px 5px;
+    color: darkslateblue;
+    cursor: pointer;
+}
+.recordar:hover{
+    text-decoration: underline;
+}
+.formulari input[type="submit"]{
+    width:30%;
+    text-align: center;
+    margin-left:35%;
+}
+input[type="submit"]{
+    width:100%;
+    height:50px;
+    border: 1px;
+    background: #6C3483;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline:none;
+}
+input[type="submit"]:hover{
+    border-color:purple;
+    transition: .5s;
+}
+.registrarse{
+margin: 30px 0; 
+text-align: center;
+font-size:16px;
+color: black;
+}
+.registrarse a{
+    color:darkslateblue;
+    text-decoration: none;
+}
+.registrarse a:hover{
+    text-decoration: underline;
+}
